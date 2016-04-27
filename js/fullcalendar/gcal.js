@@ -145,13 +145,16 @@ function transformOptions(sourceOptions, start, end, timezone, calendar) {
 
           var col = null;
           if(entry.description){
-            var m = entry.description.match(/(\\)?#(\w{2})(\w{2})(\w{2})/);
+            var m = entry.description.match(/(\\)?(#|rgb)(((\w{2})(\w{2})(\w{2}))|(\(([\s|\d]+),([\s|\d]+),([\s|\d]+)\)))/);
             if(m !== null)
               if(m[1] == '\\')
                 entry.description = entry.description.substring(1);
               else if(m[1] == undefined){
-                entry.description = entry.description.substring(7);
-                col = `#${m[2]}${m[3]}${m[4]}`;
+                entry.description = entry.description.replace(m[0], "");
+                if(m[2] == "#")
+                  col = `#${m[5]}${m[6]}${m[7]}`;
+                else
+                  col = `#${parseInt(m[9]).toString(16)}${parseInt(m[10]).toString(16)}${parseInt(m[11]).toString(16)}`;
               }
           }
 					events.push({
