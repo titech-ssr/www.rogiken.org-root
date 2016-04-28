@@ -20,8 +20,8 @@ var time = (d)=>{
 			googleCalendarApiKey: 'AIzaSyDfmD-9UVDPUjsiVk-K2GSf8x_2IoCjYe8',
 		
 			eventClick: function(event) {
-        //console.log(event);
-        console.log(s = `${event.title}\n${event.description == null ? "" : event.description + "\n"}${date(event.start)}\n${time(event.start)}-${time(event.end)}`);
+        var s = `${event.title}\n${event.description == null ? "" : event.description + "\n"}${date(event.start)}\n${time(event.start)}-${time(event.end)}`;
+        console.log(s);
         alert(s);
 				return false;
 			},
