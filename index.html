@@ -72,7 +72,7 @@
 
     <div class="col-md-3">
       <h2>Blog</h2>
-      <p><a href="http://titech-ssr.blog.jp/">titech-ssr.blog.jp</a>の最新記事</p>
+      <p><a href="//blog.rogiken.org/feed/">blog.rogiken.org</a>の最新記事</p>
       <ul id="blog-titles"></ul>
     </div>
     <div class="col-md-3">
@@ -102,23 +102,23 @@
   </div>
 
   <script type="text/javascript">
-google.load("feeds", "1");
-google.setOnLoadCallback(function initialize() {
-  var feed = new google.feeds.Feed("http://titech-ssr.blog.jp/atom.xml");
-  feed.setNumEntries(10);
-  feed.load(function(result) {
-    console.log(result);
-    if (!result.error) {
-      $('#blog-titles').append($.map(result.feed.entries, function(entry){
-        return $('<li>').append(
+  $.ajax({
+    type: "GET",
+    url: "//blog.rogiken.org/feed/",
+    cache: false,
+    dataType: "xml",
+    success: function(feed) {
+      $(feed).find('item').slice(0, 10).each(function(){
+        $('#blog-titles').append(
+          $('<li>').append(
             $('<a />')
-            .attr('href', entry.link)
-            .text(entry.title)
-            );
-      }));
+              .attr('href', $('link', this).text())
+              .text($('title', this).text())
+          )
+        )
+      });
     }
   });
-});
   </script>
 </body>
 </html>
