@@ -3,8 +3,142 @@ body {
 	padding:0;
 	line-height: 1.5em;
 	font-family: "ヒラギノ丸ゴ Pro W3", "Hiragino Kaku Gothic Pro", "メイリオ", "Meiryo", Helvetica, Verdana, Arial, sans-serif;
-	/*border-top:3px solid #86c538;*/
 	font-size: 14px;
+    padding-top:50px;
+}
+#top {
+    position: relative;
+    color: #FFF;
+    background-image: linear-gradient(to bottom,#052d5d 0, #03447d 100%);
+    background-position:95% center;
+    background-repeat:no-repeat;
+    padding:80px 0;
+}
+
+#top.header h1 {
+    font-size:400%;
+}
+
+#top p {
+    font-size:150%;
+    padding:20px;
+    opacity:0.7;
+}
+
+#top #buttons a {
+    margin-right:1em;
+}
+
+#top-short {
+    position: relative;
+    color: #FFF;
+    background-image: linear-gradient(to bottom,#052d5d 0, #03447d 100%);
+    background-position:95% center;
+    background-repeat:no-repeat;
+    padding:15px 0;
+}
+
+#top-short h1 {
+    font-size:200%;
+}
+
+#top-short p {
+    font-size:100%;
+    padding:5px;
+    opacity:0.7;
+}
+
+.activities h3 {
+  border-bottom : 1px solid #ccc;
+  padding-top : 10px;
+}
+
+.eq_lst {
+  float : left;
+  margin : 3px;
+  width : 200px;
+}
+
+#eq_imgs {
+  clear : both;
+  padding-left : 5px;
+  padding-top : 10px;
+}
+.gallery li {
+  list-style-type : none;
+  display : inline;
+}
+.gallery a img {
+  border-radius : 3px;
+  border : 3px solid #eee;
+}
+
+.footer {
+    text-align:center;
+    color:#666;
+    margin-top:0.5em;
+}
+
+@media screen and (min-width: 768px) {
+    #top {
+        background-image: url(../sasori.png), linear-gradient(to bottom,#052d5d 0, #03447d 100%);
+        -webkit-animation: blinkeye 10s ease 0s infinite;
+        -ms-animation: blinkeye 10s ease 0s infinite;
+        -moz-animation: blinkeye 10s ease 0s infinite;
+    }
+}
+
+@-moz-keyframes blinkeye {
+    96% {
+        background-image: url(../sasori.png), linear-gradient(to bottom,#052d5d 0, #03447d 100%);
+		}
+    98% {
+        background-image: url(../sasori2.png), linear-gradient(to bottom,#052d5d 0, #03447d 100%);
+		}
+    100% {
+        background-image: url(../sasori.png), linear-gradient(to bottom,#052d5d 0, #03447d 100%);
+		}
+}
+@-webkit-keyframes blinkeye {
+    96% {
+        background-image: url(../sasori.png), linear-gradient(to bottom,#052d5d 0, #03447d 100%);
+		}
+    98% {
+        background-image: url(../sasori2.png), linear-gradient(to bottom,#052d5d 0, #03447d 100%);
+		}
+    100% {
+        background-image: url(../sasori.png), linear-gradient(to bottom,#052d5d 0, #03447d 100%);
+		}
+}
+@-ms-keyframes blinkeye {
+    96% {
+        background-image: url(../sasori.png), linear-gradient(to bottom,#052d5d 0, #03447d 100%);
+		}
+    98% {
+        background-image: url(../sasori2.png), linear-gradient(to bottom,#052d5d 0, #03447d 100%);
+		}
+    100% {
+        background-image: url(../sasori.png), linear-gradient(to bottom,#052d5d 0, #03447d 100%);
+		}
+}
+
+@media screen and (max-width: 768px) {
+    #top {
+        padding:20px 0;
+    }
+    #top h1 {
+        font-size:200% !important;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    #top h1 {
+        font-size:140% !important;
+    }
+    #top p {
+        font-size:120% !important;
+        padding:10px;
+    }
 }
 
 a:hover {

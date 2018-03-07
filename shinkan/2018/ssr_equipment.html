@@ -8,15 +8,16 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
 		<link rel="stylesheet" href="module/mobile.css">
 		<link rel="stylesheet" href="module/lightbox.css">
+		<script src="https://cdn.jsdelivr.net/npm/vue@2.5.13/dist/vue.js"></script>
 		<script src="module/jquery-1.10.2.min.js"></script>
 		<script src="module/jquery.easing.1.3.js"></script>
 		<script src="module/main.js"></script>
 		<script src="module/lightbox-2.6.min.js"></script>
 		<!-- from here, copy and paste from www.rogiken.org-root/index.html -->
-		<link href="./../../css/bootstrap.min.css" rel="stylesheet">
-		<script type="text/javascript" src="https://www.google.com/jsapi"></script>
+		<link href="css/bootstrap.min.css" rel="stylesheet">
 		<script src="//ajax.googleapis.com/ajax/libs/jquery/2.0.2/jquery.min.js"></script>
-		<script src="./../../js/bootstrap.min.js"></script>
+		<script type="text/javascript" src="https://www.google.com/jsapi"></script>
+		<script src="js/bootstrap.min.js"></script>
 		<!---->
 		<!--[if lt IE 9]>
 			<script src="//html5shim.googlecode.com/svn/trunk/html5.js"></script>
@@ -55,17 +56,51 @@
 								<div class="fb-share-button" data-href="http://3rd.rogiken.org/shinkan/2014/" data-type="button_count"></div>
 							</div>
 						</div>
+						<div id="contents">
+							<div id="ssr_equipment">
+								<h2>ロ技研の設備(部室)</h2>
+								<div id="eq_lst_wrapper">
+									<ul class="eq_lst">
+										<li>エアコンプレッサー</li>
+										<li>グラインダー</li>
+										<li>旋盤</li>
+										<li>定盤</li>
+										<li>バンドソー</li>
+										<li>フライス盤</li>
+										<li>CNCフライス</li>
+										<li>丸鋸盤</li>
+										<li>3Dプリンタ</li>
+									</ul>
+									<ul class="eq_lst">
+										<li>手動曲げ器</li>
+										<li>電動サンダー</li>
+										<li>オシロスコープ</li>
+										<li>電子パーツストック</li>
+										<li>電源装置</li>
+										<li>ファンクションジェネレータ</li>
+										<li>はんだごて</li>
+									</ul>
+									<ul class="eq_lst">
+										<li>パソコン(2台)</li>
+										<li>プリンタ</li>
+										<li>無線LAN環境</li>
+										<li>冷蔵庫</li>
+										<li>冷暖房</li>
+										<li>書籍・技術書</li>
+									</ul>
+									<p id="etc">など……是非一度見学を！</p>
+									<ul id="eq_imgs" class="gallery">
+										<li><a href="img/3dprinter.jpg" data-lightbox="equipments" title="昨年度導入された「3Dプリンタ」三次元のデータを物体として出力できます"><img src="thumb/3dprinter.jpg" alt="3Dプリンタ" width="100" height="100"></a></li>
+										<li><a href="img/cnc.jpg" data-lightbox="equipments" title="CNCフライス「KURO」PCにデータを入力すると自動で削ってくれます"><img src="thumb/cnc.jpg" alt="CNCフライス「HAKU」" width="100" height="100"></a></li>
+										<li><a href="img/furaisu.jpg" data-lightbox="equipments" title="フライス盤です。ロ技研で加工する人には必須。"><img src="thumb/furaisu.jpg" alt="フライス盤" width="100" height="100"></a></li>
+										<li><a href="img/bushitsu.jpg" data-lightbox="equipments" title="部室です。手前が機械工作の領域。奥が生活領域です。"><img src="thumb/bushitsu.jpg" alt="部室" width="100" height="100"></a></li>
+									</ul>
+								</div>
+							</div>
+						</div>
+					</div>
 				</section>
 			</div>
-			<footer><p>このページに関する問い合わせはrogy.syskan[<!--__ihiohou_-->ατ<!--mark__i_-->]gmail.comまで</p></footer>
 		</div>
-		<script>
-			(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-				(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-					m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-			})(window,document,'script','//www.google-analytics.com/analytics.js','ga');
-ga('create', 'UA-49284131-1', 'rogiken.org');
-ga('send', 'pageview');
-		</script>
 	</body>
 </html>
