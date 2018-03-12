@@ -156,10 +156,11 @@ a:visited {
 }
 
 #navbar-shinkan {
-	width:300px;
+	margin-top:20px;
+	width:100%;
 }
 
-header {
+hggder {
 	margin:1em 0;
 }
 header h1 {
@@ -223,6 +224,7 @@ header h1 #sinkan {
 	background-color:#f5f5f5;
 	color:#666;
 }
+
 #anchor ul li a:hover {
 	background-color:#f5f5f5;
 }
@@ -381,7 +383,6 @@ p {
 }
 
 .fixed {
-	position: fixed;
 	top: 0;
 	width: 100%;
 }
