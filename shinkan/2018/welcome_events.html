@@ -24,13 +24,12 @@
 	<body>
 		<script>
 			let sectionName = window.location.href.split('/').pop().split('.')[0];
-			console.log(sectionName);
-			$(function(){
-				$("#navbar-top").load("nav.html #navbar-top");
-				$("#navbar-shinkan").load("nav.html #navbar-shinkan");
-				$("#footer").load("footer.html #footer");
-				$("#main-section").load("sections.html #" + sectionName);
-			});
+console.log(sectionName);
+$(function(){
+	$("#navbar-top").load("nav.html #navbar-top");
+	$("#navbar-shinkan").load("nav.html #navbar-shinkan");
+	$("#footer").load("footer.html #footer");
+});
 		</script>
 		<div id="navbar-top"></div>
 		<div id="fb-root"></div>
@@ -48,33 +47,46 @@
 			</div>
 		</div>
 		<div id="main_contents">
-		<div class="container">
-			<div class="row">
-				<div class="col-lg-3 col-md-3 col-sm-12 col-xs-12">
-					<div id="navbar-shinkan"></div>
-					<div id="main">
-						<div id="anchor">
-							<div id="buttons">
-								<div id="sharebuttons">
-									<a href="https://twitter.com/share" class="twitter-share-button" data-lang="ja">ツイート</a><script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script>
-									<br>
-									<div class="fb-share-button" data-href="http://3rd.rogiken.org/shinkan/2014/" data-type="button_count"></div>
+			<div class="container">
+				<div class="row">
+					<div class="col-lg-3 col-md-3 col-sm-12 col-xs-12">
+						<div id="navbar-shinkan"></div>
+						<div id="main">
+							<div id="anchor">
+								<div id="buttons">
+									<div id="sharebuttons">
+										<a href="https://twitter.com/share" class="twitter-share-button" data-lang="ja">ツイート</a><script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script>
+										<br>
+										<div class="fb-share-button" data-href="http://3rd.rogiken.org/shinkan/2014/" data-type="button_count"></div>
+									</div>
 								</div>
 							</div>
 						</div>
 					</div>
-				</div>
-				<div class="col-lg-9 col-md-9 col-sm-12 col-xs-12">
-					<div id="wrapper">
-						<div id="contents">
-							<section>
-								<div id="main-section"></div>
-							</section>
+					<div class="col-lg-9 col-md-9 col-sm-12 col-xs-12">
+						<div id="wrapper">
+							<div id="contents">
+								<section>
+									<div id="welcome_events">
+										<h2 >新歓イベント日程</h2>
+										<hr></hr>
+										<p>詳細が決まり次第追記していきます。新歓コンパでは、新入生には無料でディナーが振る舞われます！！</p>
+										<ul>
+											<li>ものつくりサークル合同説明会：4月11日(水)13:50~ @ものつくり教育研究支援センター</li>
+											<li>新歓展示：未定</li>
+											<li>新歓コンパ：未定</li>
+											<li>rogyゼミ：未定</li>
+											<li>Arduino体験会：未定</li>
+											<li>サークル説明会：未定</li>
+											<li>4月部会：未定</li>
+										</ul>
+									</div>
+								</section>
+							</div>
 						</div>
 					</div>
 				</div>
 			</div>
-		</div>
 		</div>
 		<footer><div id="footer"></div></footer>
 	</body>
