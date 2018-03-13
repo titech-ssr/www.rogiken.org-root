@@ -6,6 +6,16 @@ body {
 	font-size: 14px;
     padding-top:50px;
 }
+
+#main_contents .container {
+	max-width: 100%;
+	min-width: 100%;
+	padding-left: 0px;
+	padding-right: 0px;
+	margin-left: 0px;
+	margin-right: 0px;
+}
+
 #top {
     position: relative;
     color: #FFF;
@@ -155,9 +165,14 @@ a:visited {
 	margin:0 auto;
 }
 
-#navbar_shinkan {
+#navbar-shinkan {
 	margin-top:20px;
+}
+
+#navbar-shinkan .navbar-collapse {
+	float:left;
 	width:100%;
+	clear:both;
 }
 
 hggder {
