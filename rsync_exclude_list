@@ -1,0 +1,7 @@
+# This file!
+/rsync_exclude_list
+# Git related files
+/.git/
+.gitignore
+# Files for git repository, not for website.
+/README.adoc
