@@ -1,126 +1,140 @@
 <!DOCTYPE html>
 <html lang="ja">
+    <head>
+        <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+        <meta charset="utf-8" />
+        <title>東京工業大学 ロボット技術研究会</title>
+        <meta
+            name="description"
+            content="ロボット技術研究会は、機械工作・電子工作・プログラミングなどのものつくり活動を行う東京工業大学の公認サークルです。"
+        />
+        <meta name="author" content="東京工業大学 ロボット技術研究会" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
+        <link href="css/bootstrap.min.css" rel="stylesheet" />
+        <script src="//ajax.googleapis.com/ajax/libs/jquery/2.0.2/jquery.min.js"></script>
+        <script type="text/javascript" src="https://www.google.com/jsapi"></script>
+        <script src="js/bootstrap.min.js"></script>
+        <!-- fullcalendar -->
+        <link href="css/fullcalendar/fullcalendar.css" rel="stylesheet" />
+        <link href="css/fullcalendar/fullcalendar.print.css" rel="stylesheet" media="print" />
+        <script src="js/fullcalendar/lib/moment.min.js"></script>
+        <script src="js/fullcalendar/lib/jquery.min.js"></script>
+        <script src="js/fullcalendar/fullcalendar.min.js"></script>
+        <script src="js/fullcalendar/gcal.js"></script>
+        <script src="js/fullcalendar/calendar.js"></script>
+        <!---->
+        <!--[if lt IE 9]>
+            <script src="//html5shim.googlecode.com/svn/trunk/html5.js"></script>
+        <![endif]-->
+        <link href="css/styles.css" rel="stylesheet" />
+    </head>
 
-<head>
-    <meta http-equiv="content-type" content="text/html; charset=UTF-8">
-    <meta charset="utf-8">
-    <title>東京工業大学 ロボット技術研究会</title>
-    <meta name="description" content="ロボット技術研究会は、機械工作・電子工作・プログラミングなどのものつくり活動を行う東京工業大学の公認サークルです。">
-    <meta name="author" content="東京工業大学 ロボット技術研究会">
-    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-    <link href="css/bootstrap.min.css" rel="stylesheet">
-    <script src="//ajax.googleapis.com/ajax/libs/jquery/2.0.2/jquery.min.js"></script>
-    <script type="text/javascript" src="https://www.google.com/jsapi"></script>
-    <script src="js/bootstrap.min.js"></script>
-    <!-- fullcalendar -->
-    <link href='css/fullcalendar/fullcalendar.css' rel='stylesheet' />
-    <link href='css/fullcalendar/fullcalendar.print.css' rel='stylesheet' media='print' />
-    <script src='js/fullcalendar/lib/moment.min.js'></script>
-    <script src='js/fullcalendar/lib/jquery.min.js'></script>
-    <script src='js/fullcalendar/fullcalendar.min.js'></script>
-    <script src='js/fullcalendar/gcal.js'></script>
-    <script src='js/fullcalendar/calendar.js'></script>
-    <!---->
-    <!--[if lt IE 9]>
-      <script src="//html5shim.googlecode.com/svn/trunk/html5.js"></script>
-    <![endif]-->
-    <link href="css/styles.css" rel="stylesheet">
-</head>
-
-<body>
-
-  <nav class="navbar navbar-fixed-top navbar-inverse">
-    <div class="container">
-      <div class="navbar-header">
-        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
-          <span class="sr-only">Toggle navigation</span>
-          <span class="icon-bar"></span>
-          <span class="icon-bar"></span>
-          <span class="icon-bar"></span>
-        </button>
-        <a class="navbar-brand" href="https://www.rogiken.org/">rogiken.org</a>
-      </div>
-      <div id="navbar" class="navbar-collapse collapse">
-        <ul class="nav navbar-nav">
-          <!--<li><a href="http://3rd.rogiken.org/wiki/index.php?%C9%F4%B0%F7%B8%FE%A4%B1%BE%F0%CA%F3">内部向け</a></li>
+    <body>
+        <nav class="navbar navbar-fixed-top navbar-inverse">
+            <div class="container">
+                <div class="navbar-header">
+                    <button
+                        type="button"
+                        class="navbar-toggle collapsed"
+                        data-toggle="collapse"
+                        data-target="#navbar"
+                        aria-expanded="false"
+                        aria-controls="navbar"
+                    >
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <a class="navbar-brand" href="https://www.rogiken.org/">rogiken.org</a>
+                </div>
+                <div id="navbar" class="navbar-collapse collapse">
+                    <ul class="nav navbar-nav">
+                        <!--<li><a href="http://3rd.rogiken.org/wiki/index.php?%C9%F4%B0%F7%B8%FE%A4%B1%BE%F0%CA%F3">内部向け</a></li>
           <li><a href="http://3rd.rogiken.org/wiki/index.php?%A5%ED%B5%BB%B8%A6%A4%CE%BE%D2%B2%F0">サークル情報</a></li>-->
-          <li><a href="http://titech-ssr.blog.jp/">ブログ(旧)</a></li>
-          <li><a href="https://blog.rogiken.org/">ブログ(新)</a></li>
-          <li><a href="https://wiki.rogiken.org/">Wiki</a></li>
-          <!--<li><a href="http://3rd.rogiken.org/wiki/index.php?%BF%B7%C6%FE%C0%B8%B4%BF%B7%DE%A5%DA%A1%BC%A5%B8">新入生の方へ</a></li>-->
-          <li><a href="https://www.rogiken.org/shinkan/2020/">新入生の方へ</a></li>
-          <li><a href="https://www.rogiken.org/activity/">活動紹介</a></li>
-          <!--<li><a href="http://3rd.rogiken.org/wiki/index.php?%A5%ED%B5%BB%B8%A6%A4%CE%A5%EA%A5%F3%A5%AF">リンク</a></li>-->
-          <li><a href="contact.html">連絡先</a></li>
-        </ul>
-      </div>
-    </div>
-  </nav>
+                        <li><a href="http://titech-ssr.blog.jp/">ブログ(旧)</a></li>
+                        <li><a href="https://blog.rogiken.org/">ブログ(新)</a></li>
+                        <li><a href="https://wiki.rogiken.org/">Wiki</a></li>
+                        <!--<li><a href="http://3rd.rogiken.org/wiki/index.php?%BF%B7%C6%FE%C0%B8%B4%BF%B7%DE%A5%DA%A1%BC%A5%B8">新入生の方へ</a></li>-->
+                        <li><a href="https://www.rogiken.org/shinkan/2020/">新入生の方へ</a></li>
+                        <li><a href="https://www.rogiken.org/activity/">活動紹介</a></li>
+                        <!--<li><a href="http://3rd.rogiken.org/wiki/index.php?%A5%ED%B5%BB%B8%A6%A4%CE%A5%EA%A5%F3%A5%AF">リンク</a></li>-->
+                        <li><a href="contact.html">連絡先</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
 
-  <div id="top">
-    <div class="container">
-      <h1>東京工業大学 ロボット技術研究会</h1>
-      <p>ロボット技術研究会は、機械工作・電子工作・プログラミングなどのものつくり活動を行う東京工業大学の公認サークルです。</p>
-      <div id="buttons">
-        <a class="btn btn-primary btn-lg" href="https://www.rogiken.org/shinkan/2020/" role="button">2020年度新歓ページヘ</a>
-        <a class="btn btn-primary btn-lg" href="https://www.rogiken.org/shinkan/2020/introduce.html" role="button">ロボット制御シミュレーション体験会へ</a>
-        <a class="btn btn-lg btn-default" href="https://blog.rogiken.org/" role="button">活動日誌</a>
-      </div>
-    </div>
-  </div>
+        <div id="top">
+            <div class="container">
+                <h1>東京工業大学 ロボット技術研究会</h1>
+                <p>ロボット技術研究会は、機械工作・電子工作・プログラミングなどのものつくり活動を行う東京工業大学の公認サークルです。</p>
+                <div id="buttons">
+                    <a class="btn btn-primary btn-lg" href="https://www.rogiken.org/shinkan/2020/" role="button">2020年度新歓ページヘ</a>
+                    <a class="btn btn-primary btn-lg" href="https://www.rogiken.org/shinkan/2020/introduce.html" role="button"
+                        >ロボット制御オンライン体験会へ</a
+                    >
+                    <a class="btn btn-lg btn-default" href="https://blog.rogiken.org/" role="button">活動日誌</a>
+                </div>
+            </div>
+        </div>
 
-  <div class="container">
+        <div class="container">
+            <div class="col-md-3">
+                <h2>Blog</h2>
+                <p><a href="https://blog.rogiken.org/">blog.rogiken.org</a>の最新記事</p>
+                <ul id="blog-titles"></ul>
+            </div>
+            <div class="col-md-3">
+                <h2>Twitter</h2>
+                <a class="twitter-timeline" href="https://twitter.com/titech_ssr" data-widget-id="310782559095234562"
+                    >@titech_ssr からのツイート</a
+                >
+                <script>
+                    (function(d, s, id) {
+                        var js,
+                            fjs = d.getElementsByTagName(s)[0];
+                        if (!d.getElementById(id)) {
+                            js = d.createElement(s);
+                            js.id = id;
+                            js.src = '//platform.twitter.com/widgets.js';
+                            fjs.parentNode.insertBefore(js, fjs);
+                        }
+                    })(document, 'script', 'twitter-wjs');
+                </script>
+            </div>
+            <div class="col-md-6">
+                <h2>今後の予定</h2>
+                <div id="calendar"></div>
+                <div id="loading">loading..</div>
+            </div>
+        </div>
+        <div class="container footer">
+            <p>ロボット技術研究会 オフィシャルメールアドレスは、<mark>info (at) rogiken.org</mark> です。(at)を @ に変えて送って下さい。</p>
+            <p>Copyright © 2020 Tokyo Tech Society for the Study of Robotics. All Rights Reserved.</p>
+        </div>
 
-    <div class="col-md-3">
-      <h2>Blog</h2>
-      <p><a href="https://blog.rogiken.org/">blog.rogiken.org</a>の最新記事</p>
-      <ul id="blog-titles"></ul>
-    </div>
-    <div class="col-md-3">
-      <h2>Twitter</h2>
-      <a class="twitter-timeline" href="https://twitter.com/titech_ssr" data-widget-id="310782559095234562">@titech_ssr からのツイート</a>
-      <script>
-(function(d, s, id) {
-  var js, fjs = d.getElementsByTagName(s)[0];
-  if (!d.getElementById(id)) {
-    js = d.createElement(s);
-    js.id = id;
-    js.src = "//platform.twitter.com/widgets.js";
-    fjs.parentNode.insertBefore(js, fjs);
-  }
-})(document, "script", "twitter-wjs");
-      </script>
-    </div>
-    <div class="col-md-6">
-      <h2>今後の予定</h2>
-        <div id="calendar"></div>
-        <div id="loading">loading..</div>
-    </div>
-  </div>
-  <div class="container footer">
-    <p>ロボット技術研究会 オフィシャルメールアドレスは、<mark>info (at) rogiken.org</mark> です。(at)を @ に変えて送って下さい。 </p>
-    <p>Copyright © 2020 Tokyo Tech Society for the Study of Robotics. All Rights Reserved.</p>
-  </div>
-
-  <script type="text/javascript">
-  $.ajax({
-    type: "GET",
-    url: "//blog.rogiken.org/",
-    cache: false,
-    dataType: "xml",
-    success: function(feed) {
-      $(feed).find('item').slice(0, 10).each(function(){
-        $('#blog-titles').append(
-          $('<li>').append(
-            $('<a />')
-              .attr('href', $('link', this).text())
-              .text($('title', this).text())
-          )
-        )
-      });
-    }
-  });
-  </script>
-</body>
+        <script type="text/javascript">
+            $.ajax({
+                type: 'GET',
+                url: '//blog.rogiken.org/',
+                cache: false,
+                dataType: 'xml',
+                success: function(feed) {
+                    $(feed)
+                        .find('item')
+                        .slice(0, 10)
+                        .each(function() {
+                            $('#blog-titles').append(
+                                $('<li>').append(
+                                    $('<a />')
+                                        .attr('href', $('link', this).text())
+                                        .text($('title', this).text())
+                                )
+                            );
+                        });
+                },
+            });
+        </script>
+    </body>
 </html>
-
