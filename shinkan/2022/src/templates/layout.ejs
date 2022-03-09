@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+	<head>
+        <%- include('header'); %>
+	</head>
+	<body>
+		<div id="navbar-top">
+            <%- include('navbar_top'); %>
+        </div>
+		<div id="fb-root">
+            <%- include('facebook'); %>
+        </div>
+		<div id="top">
+            <%- include('top'); %>
+        </div>
+		<div id="main_contents">
+            <%- include('main_container', {'filename': filename}); %>
+		</div>
+		<footer>
+            <%- include('footer'); %>
+        </footer>
+	</body>
+</html>
