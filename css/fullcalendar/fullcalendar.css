@@ -1,0 +1,38 @@
+#calendar {
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+/*週*/
+.fc-col-header-cell{
+	background: #d3d3d3;
+}
+
+.fc-daygrid-day{
+	background: #fff;
+}
+
+/* 土曜日の背景色をいい感じの青色に設定 */
+.fc-day.fc-day-sat {
+  background-color: #7fa6cf; /* Bootstrapの青色 */
+}
+
+/* 日曜日の背景色をいい感じの赤色に設定 */
+.fc-day.fc-day-sun {
+  background-color: #be6a73; /* Bootstrapの赤色 */
+}
+
+.fc-daygrid-day-number {
+  color: black;
+}
+
+.my-events{
+	font-size: 12px;
+  color: red;
+  background-color: '#ffffff00';
+  border-color: '#ffffff00';
+}
+
+.fc-col-header-cell-cushion {
+  color: black;
+}
