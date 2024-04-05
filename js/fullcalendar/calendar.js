@@ -1,43 +1,33 @@
-(function() {
-  var datemap = ["日", "月", "火", "水", "木", "金", "土"];
-  var date = function(d) {
-    return (d.year() + "/" + (d.month() + 1) + "/" + d.date() + "(" + datemap[d.day()] + ")");
-  };
-  var time = function(d) {
-    return (d.hours() + ":" + ((m = d.minutes()) < 10 ? "0" + m : m));
-  };
-  $(document).ready(function() {
-    $('#calendar').fullCalendar({
-      googleCalendarApiKey: 'AIzaSyDfmD-9UVDPUjsiVk-K2GSf8x_2IoCjYe8',
-      eventClick: function(event) {
-        var s = (event.title + "\n" + (event.description == null ? "" : event.description + "\n") + date(event.start) + "\n" + time(event.start) + "-" + time(event.end));
-        console.log(s);
-        alert(s);
-        return false;
+document.addEventListener('DOMContentLoaded', function() {
+  var calendarEl = document.getElementById('calendar');
+
+  var calendar = new FullCalendar.Calendar(calendarEl, {
+      locale: 'ja',
+      headerToolbar: {
+          left: 'prev,next today',
+          center: 'title',
+          right: 'dayGridMonth,timeGridWeek,timeGridDay'
       },
-      timeFormat: 'H:mm',
-      weekends: true,
-      titleFormat: {
-        month: 'YYYY年M月',
-        week: 'YYYY年M月D日',
-        day: 'YYYY年M月D日'
+      dayCellContent: function(arg){
+        return arg.date.getDate();
       },
-      header: {
-        left: 'prev',
-        center: 'title',
-        right: 'next'
-      },
-      allDaySlot: true,
-      allDayText: '',
-      eventSources: [{
-        url: 'jeatmok45tmphf3ip4i4njhjrk@group.calendar.google.com',
-        className: "gcal",
-        backgroundColor: "#4683FF",
-        borderColor: "#4683FF"
-      }],
-      loading: function(bool) {
-        $('#loading').toggle(bool);
-      }
-    });
+      buttonText: {  // ボタンのテキストをカスタマイズ
+        today: '今日',
+        month: '月',
+        week: '週',
+        day: '日'
+    },
+    initialView: 'dayGridMonth',
+    googleCalendarApiKey: "AIzaSyCvmCQKqGdRBB2ytmYEgBd4_lnMa24LwM4",
+    eventSources: [
+    {
+      googleCalendarId: "tajima.tajiken@gmail.com",
+      className: "my-events"
+    },
+    {
+			googleCalendarId: 'ja.japanese#holiday@group.v.calendar.google.com'
+		}
+  ]
   });
-})();
+  calendar.render();
+});
