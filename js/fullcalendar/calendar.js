@@ -18,10 +18,10 @@ document.addEventListener('DOMContentLoaded', function() {
         day: '日'
     },
     initialView: 'dayGridMonth',
-    googleCalendarApiKey: "AIzaSyCvmCQKqGdRBB2ytmYEgBd4_lnMa24LwM4",
+    googleCalendarApiKey: "AIzaSyADLXqxz-AFLrSgnDuyHn40xeqdnBeJELk",
     eventSources: [
     {
-      googleCalendarId: "tajima.tajiken@gmail.com",
+      googleCalendarId: "rogyevent@gmail.com",
       className: "my-events"
     },
     {
