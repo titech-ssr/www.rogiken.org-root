@@ -1,23 +1,9 @@
 document.addEventListener('DOMContentLoaded', function() {
-  var calendarEl = document.getElementById('calendar');
+  var calendarEl = document.getElementById('events-list');
 
   var calendar = new FullCalendar.Calendar(calendarEl, {
     locale: 'ja',
-    headerToolbar: {
-        left: 'prev,next today',
-        center: 'title',
-        right: 'dayGridMonth,timeGridWeek,timeGridDay'
-    },
-    dayCellContent: function(arg){
-      return arg.date.getDate();
-    },
-    buttonText: {  // ボタンのテキストをカスタマイズ
-      today: '今日',
-      month: '月',
-      week: '週',
-      day: '日'
-    },
-    initialView: 'dayGridMonth',
+    initialView: 'listMonth',
     googleCalendarApiKey: "AIzaSyADLXqxz-AFLrSgnDuyHn40xeqdnBeJELk",
     eventSources: [
     {
