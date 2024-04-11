@@ -7,8 +7,7 @@ document.addEventListener('DOMContentLoaded', function() {
     googleCalendarApiKey: "AIzaSyADLXqxz-AFLrSgnDuyHn40xeqdnBeJELk",
     eventSources: [
     {
-      googleCalendarId: "rogyevent@gmail.com",
-      className: "my-events"
+      googleCalendarId: "rogyevent@gmail.com"
     },
     {
 			googleCalendarId: 'ja.japanese#holiday@group.v.calendar.google.com'
