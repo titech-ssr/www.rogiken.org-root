@@ -35,6 +35,7 @@ document.addEventListener('DOMContentLoaded', function() {
     tippy(e.el, {
       content: e.event.title,
     });
+    
   },
 
   });
