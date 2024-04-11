@@ -27,7 +27,16 @@ document.addEventListener('DOMContentLoaded', function() {
     {
 			googleCalendarId: 'ja.japanese#holiday@group.v.calendar.google.com'
 		}
-  ]
+  ],
+  eventClick: function(info) { // クリックした時にgoogle calendarに飛ばないようにする
+    info.jsEvent.preventDefault();
+  },
+  eventDidMount: (e)=>{ // イベントの上にhoverした時にイベントのタイトルを表示
+    tippy(e.el, {
+      content: e.event.title,
+    });
+  },
+
   });
   calendar.render();
 });
