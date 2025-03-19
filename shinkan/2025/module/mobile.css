@@ -1,0 +1,40 @@
+@media only screen and (max-width: 480px) {
+	html, body {
+		padding:0.5em;
+		font-size: 14px !important;
+		line-height: 1.6 !important;
+	}
+	h1 {
+		line-height: 1 !important;
+	}
+	h1 * {
+		font-size:large !important;
+		margin:0 !important;
+	}
+	#anchor, h1 br, .verbose {
+		display:none !important;
+	}
+	.eq_lst, #etc {
+		width:100% !important;
+		float:none !important;
+	}
+	#wrapper, #contents {
+		margin:0 !important;
+		width:100% !important;
+	}
+	.gallery img {
+		width:80px !important;
+		height:80px !important;
+	}
+	#contents img {
+		width:100%;
+		height:auto;
+	}
+	.figure {
+		float:none !important;
+	}
+	.figure {
+		width:150px;
+		height:auto;
+	}
+}
