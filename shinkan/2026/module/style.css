@@ -1,0 +1,253 @@
+body {
+	margin:0;
+	padding:0;
+	line-height: 1.5em;
+	font-family: "ヒラギノ丸ゴ Pro W3", "Hiragino Kaku Gothic Pro", "メイリオ", "Meiryo", Helvetica, Verdana, Arial, sans-serif;
+	/*border-top:3px solid #86c538;*/
+	font-size: 14px;
+}
+
+a:hover {
+	text-decoration:none;
+}
+
+a:visited {
+	color:#006bb2;
+}
+
+#wrapper {
+	width:750px;
+	overflow:hidden;
+	margin:0 auto;
+}
+
+
+header {
+	margin:1em 0;
+}
+header h1 {
+	color:#0071dd;
+	margin:0;
+}
+header h1 #titech {
+	font-weight:normal;
+	font-size:22px;
+}
+header h1 #ssr {
+	font-size:24px;
+}
+header h1 #sinkan {
+	color:#006bb2;
+	font-size:32px;
+}
+
+
+#anchor #sharebuttons {
+	margin:0.5em;
+}
+
+#anchor ul {
+	border-radius: 4px;
+	display:block;
+	margin:0;
+	padding:0;
+	border:1px solid #dddddd;
+}
+
+#anchor ul li {
+	list-style:none;
+	display:block;
+	margin:0;
+	padding:0;
+}
+
+#anchor ul li a {
+	text-decoration:none;
+	display:block;
+	padding:8px 0 10px 10px;
+	border-top:1px solid #dddddd;
+	color:#0071dd;
+}
+#anchor ul li:first-child a {
+	border-top:none;
+}
+
+#anchor ul li a.current {
+	box-shadow: 0px 0px 3px #ccc inset;
+	background-color:#f5f5f5;
+	color:#666;
+}
+#anchor ul li a:hover {
+	background-color:#f5f5f5;
+}
+
+
+#main {
+	float:left;
+}
+
+#main #anchor {
+	float:left;
+	width:180px;
+}
+
+#main #contents {
+	margin-left:190px;
+	width:560px;
+}
+
+#main h2 {
+	font-weight:normal;
+	border-bottom:1px solid #ccc;
+	padding:3px 0;
+	margin:0.3em 0;
+}
+
+#main h3 {
+	font-size:1.14em;
+	margin:0.3em 0 0.1em;
+}
+
+#main ul {
+	margin:0.5em;
+}
+
+#contents #headlinks {
+	margin:3px 3px 8px;
+	border:1px solid #CCC;
+	border-radius:3px;
+}
+
+#contents #headlinks ul, #contents #headlinks li {
+	margin:0;
+	padding:0;
+	display:block;
+}
+
+#contents #headlinks li {
+	padding:2px 0 2px 10px;
+}
+#contents #headlinks h3 {
+	margin:3px 4px 0;
+	font-size:14px;
+	font-weight:normal;
+}
+
+#contents #headlinks li:before {
+	content: "☞";
+	color:#999;
+}
+
+#contents #headlinks #hlsnd a {
+	background-color:#f1ffe0;
+	border-color:#31342d;
+}
+
+#contents ul {
+	padding:0 1em;
+}
+
+#contents ul.events li {
+	list-style-type:none;
+}
+#contents ul.events li:before {
+	content: "● ";
+}
+
+#contents .description {
+	font-size:small;
+}
+
+#main .bordered {
+	margin:0;
+	padding:0.5em;
+	border:1px solid #666;
+	border-radius:3px;
+}
+
+#contents a img {
+	border-radius:3px;
+	border:3px solid #eee;
+}
+
+#contents a img:hover {
+	border-color:#ccc;
+}
+
+#contents .figure {
+	margin:3px;
+	float:right;
+}
+
+#contents .eq_lst {
+	margin:0;
+	list-style-type:square;
+	width:150px;
+	margin:3px;
+	float:left;
+}
+
+#contents #etc {
+	float:right;
+	text-align:right;
+	font-size:small;
+}
+
+#contents #eq_lst_wrapper {
+	overflow:hidden;
+}
+
+#contents ul.gallery {
+	margin:0;
+	padding:0;
+}
+
+#contents .gallery li {
+	padding:0;
+	display:inline;
+}
+
+#contents #labs {
+	margin:0;
+	padding:0;
+}
+#contents #labs dt:before {
+	content: "・";
+}
+#contents #labs dt {
+	font-weight:bold;
+	background-color:#FFF;
+}
+#contents #labs dd {
+	margin-left:2em;
+}
+
+#contents #eq_imgs {
+	clear:both;
+}
+
+p {
+	margin:0;
+	text-indent:1em;
+}
+
+.fixed {
+	position: fixed;
+	top: 0;
+	width: 100%;
+}
+
+hr {
+    border: 0;
+    height: 1px;
+    background:#CCC;
+    width:80%;
+}
+
+footer {
+	clear:both;
+	border-top:1px solid #ccc;
+	padding:0.5em;
+	margin:0.5em;
+	text-align:center;
+}
